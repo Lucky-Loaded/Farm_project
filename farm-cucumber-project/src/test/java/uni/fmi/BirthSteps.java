@@ -11,6 +11,7 @@ import uni.fmi.models.CowsAllowingModel;
 public class BirthSteps {
 
 	CowsAllowingModel allowedCows;
+	
 @Given("^Cows are alowed to have a child$")
 public void cowsAllowed() throws Throwable {
 	allowedCows = new CowsAllowingModel();
@@ -43,6 +44,6 @@ public void birthIsNotAllowed() throws Throwable {
 public void birth_is_not_successful() throws Throwable {
 	assertEquals("Birthing was not Successful", allowedCows.getMessage());
 	
-	
 }
+
 }

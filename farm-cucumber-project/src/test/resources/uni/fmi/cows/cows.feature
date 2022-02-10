@@ -1,4 +1,3 @@
-
 Feature: Birthing
 
   Scenario: If age of Cows is valid 	
