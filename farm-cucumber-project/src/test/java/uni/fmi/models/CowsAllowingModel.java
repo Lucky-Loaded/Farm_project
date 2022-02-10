@@ -26,12 +26,14 @@ public class CowsAllowingModel {
 	}
 
 	public boolean GoodPregnanting(int month) {
-		pregnantingTime = month;
+		if(motherAge>=2) {pregnantingTime = month;
 		if(month>=10)
 		{
 			return true;
 		}
+		}
 		return false;
+		
 	}
 
 	public String getMessage() {

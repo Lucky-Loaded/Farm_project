@@ -32,9 +32,17 @@ public void motherPregnanting(int arg1) throws Throwable {
 }
 
 @Then("^Birth is successful\\.$")
-public void birth_is_successful() throws Throwable {
+public void birthIsSuccessful() throws Throwable {
     assertEquals("Have a child successfully", allowedCows.getMessage());
 }
-
-
+@Then("^Birth is not allowed\\.$")
+public void birthIsNotAllowed() throws Throwable {
+	assertEquals("Birthing is not allowed", allowedCows.getMessage());
+}
+@Then("^Birth is not successful\\.$")
+public void birth_is_not_successful() throws Throwable {
+	assertEquals("Birthing was not Successful", allowedCows.getMessage());
+	
+	
+}
 }
