@@ -12,7 +12,7 @@ import uni.fmi.models.Animal;
 import uni.fmi.models.Association;
 import uni.fmi.models.Owner;
 
-public class FirstTest {
+public class FirstTest{
 
   @Test
   public void testSetWithStrings() {
@@ -36,9 +36,9 @@ public class FirstTest {
     value2.setName("BerkShier");
     testInstance.add(value2);
     Farm value3 = new Farm();
-    value3.setName("KonstantinovkaFarm");
+    value3.setName("BerkShier");
     testInstance.add(value3);
-    assertEquals(3, testInstance.size());
+    assertEquals(2, testInstance.size());
   }
   
   @Test
@@ -84,3 +84,4 @@ public class FirstTest {
 	    assertEquals(2, testInstance.size());
   }
 }
+

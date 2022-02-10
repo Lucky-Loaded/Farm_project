@@ -3,13 +3,24 @@
   <groupId>uni.fmi</groupId>
   <artifactId>farm-cucumber-project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<properties>
+<maven.compiler.target>1.8</maven.compiler.target>
+<maven.compiler.source>1.8</maven.compiler.source>
+<project.built.sourceEncoding>UTF-8</project.built.sourceEncoding>
+</properties>
 <dependencies>
   <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.13.2</version>
-    <scope>test</scope>
+    <groupId>info.cukes</groupId>
+	<artifactId>cucumber-java</artifactId>
+	<version>1.2.5</version>
+	<scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>info.cukes</groupId>
+	<artifactId>cucumber-junit</artifactId>
+	<version>1.2.5</version>
+	<scope>test</scope>
 </dependency>
 
   </dependencies>
